@@ -48,3 +48,8 @@ The NailsXK-Shell website uses jsDelivr as its CDN provider, serving Bootstrap 5
 
 ## Live Mobile NavBar
 ![Live Mobile Navbar Page](screenshots/navbar.png)
+
+## Website's own Domain & Deployed Link
+https://dash.infinityfree.com/accounts/if0_40537311/domains/nailsxk-shell.infinityfree.me ,
+https://zingy-banoffee-768624.netlify.app/
+
