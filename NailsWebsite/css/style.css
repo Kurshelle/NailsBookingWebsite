@@ -1,0 +1,329 @@
+/* === Home Page === */
+/* === Base Reset & Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  /* Clean, readable base font for everything except custom headings */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* === Navbar Customization (Optional) === */
+.business-logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #212529;
+}
+
+.hero-section {
+  background-image: url('../img/nail-ai.jpeg'); /* Keep your filename as-is for now */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Optional: Add a subtle dark overlay (like your reference image) */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark tint for readability */
+  z-index: 1;
+}
+
+/* Content on top of background */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 700px;
+}
+
+/* Typography */
+.business-name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.part1 {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+}
+
+.part2 {
+  font-family: 'Luxurious Script', cursive;
+  font-size: 4.2rem;
+  margin-left: 8px;
+}
+
+.tagline {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}  
+
+.btn {
+  /* Prevent inheritance of cursive/serif fonts */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 500;
+}
+
+/* Button hover enhancements */
+.btn-outline-light {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .business-name {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  
+  .part1 {
+    font-size: 2.8rem;
+  }
+  
+  .part2 {
+    font-size: 3rem;
+    margin-left: 4px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+  
+  /* Center content on mobile */
+  .hero-content {
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+}
+
+                                                   /* === Services Page === */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color:#212529;
+}
+
+/* === Navbar Branding === */
+.navbar{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-weight:600;
+    font-size:1.0rem;
+}
+
+
+/*=== Hero/Section Headings === */
+h1{
+    font-family:'Bodoni Moda', serif;
+    color:#333;
+}
+
+/* === Accordion Button Styling (Visible Shape + Style) === */
+.accordion-item{
+    margin-bottom: 16px;
+    border:none;
+    border-radius:14px;
+    overflow: hidden;
+    box-shadow:0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button:hover{
+    border-color:#dc3545;
+}
+
+.accordion-butoon:not(.collapsed){
+    background-color:#fff;
+    color:#dc3545;
+    border-color:#dc3545;
+    font-weight:700;
+}
+
+/*===Arrow icon color===*/
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dc3545'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  scale: 1.2;
+}
+
+.accordion-butoon.collapsed::after{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+/*===Accodion Body Padding===*/
+.accordion-body{
+    padding:1.25rem;
+    background-color:#fafafa;
+}
+
+/*===Notes Box Before You Visit==*/
+.bg-light{
+    background-color:#f8f9fa;
+    border-left:4px solid #dc3545;
+}
+
+/*===Buttons(Fix font & style)===*/
+.btn{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/*===Responsive Padding Fix===*/
+.container{
+    max-width:900px;
+}
+
+/*===Mobile Adjustments===*/
+@media (max-width:768px){
+    .accodion-button{
+        font-size:1rem;
+        padding:14px 16px;
+    }
+    h1{
+        font-size:1.8rem;
+    }
+}
+
+/* === About Page Background & Styling === */
+.about-section{
+    background-color:#f8f9fa;
+    padding:5rem 0;
+}
+
+.photo-circle{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.1);
+    display:flex;
+    align-items:center;
+    align-items: center;
+    background-color:#fff;
+    border: 4px solid #dc3545;
+}
+
+.photo-circle img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+.about-section .col-lg-7{
+    padding:2rem;
+    background-color:#fff;
+    border-radius:12px;
+    box-shadow:0, 4px, 12px rgba(0, 0, 0, 0.05);
+}
+
+@media(max-width:768px){
+    .about-section{
+        padding:3rem 0;
+    }
+
+    .photo-circle{
+        width:200px;
+        height: 200px;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+}
+
+/* Make all form controls full-width */
+.form-control {
+  width: 100% !important;
+}
+
+/* Optional: Add padding/margin consistency */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* WhatsApp button style */
+.btn-success {
+  background-color: #25D366;
+  border-color: #128C7E;
+}
+
+.btn-success:hover {
+  background-color: #128C7E;
+  border-color: #075E54;
+}
+
+/* About Page Styling */
+.about-section {
+  background-color: #f8f5f2;
+  padding: 5rem 0;
+}
+
+.about-section h1 {
+  font-family: 'Luxurious Script', cursive;
+  font-size: 3rem;
+  color: #333;
+}
+
+.about-section h1 span {
+  color: #dc3545;
+}
+
+.about-section p {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.about-section .photo-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 4px solid #dc3545;
+}
+
+.about-section .photo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

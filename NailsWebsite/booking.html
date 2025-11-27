@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>NailsXK-Shell</title>
+    <title>Book Appointment | NailsXK-Shell | Nail Salon Trinidad</title>
+    <meta name="description" content="Book your nail appointment in Trinidad with XK-Shell. Choose from manicures, gel nails, waxing & more. Instant WhatsApp confirmation!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" >
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="thankyoupage.html">NailsXK-Shell</a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Book Your Appointment</h1>
+
+        <form id="bookingForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone / WhatsApp</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+
+            <div class="col-12">
+                <label for="service" class="form-label">Service</label>
+                <select class="form-select" id="service" required>
+                    <option value="">Choose...</option>
+                    <option value="Manicure">Manicure</option>
+                    <option value="Gel-X">Gel-X</option>
+                    <option value="Acrylic">Acrylic</option>
+                    <option value="Wax Treatment">Wax Treatment</option>
+                    <option value="Beauty Package">Beauty Package</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="date" class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" id="date"required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="time" class="for-label">Preferred Time</label>
+                <input type="time" class="form-control" id="time" required>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-danger px-4 py-2 fw-bold">Request Appointment</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer class="text-center py-4 mt-5 bg-light">
+        <p class="mb-2">© 2025 NailsXK-Shell</p>
+        <p class="mb-2">Serving San Fernando, Trinidad & Tobago</p>
+        </p>
+    </footer>
+</body>
+</html>
